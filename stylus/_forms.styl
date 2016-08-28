@@ -1,0 +1,91 @@
+label
+  display block
+
+input,select
+  height 2rem
+  width 100%
+  display block
+  border 1px solid grey
+  padding .5rem
+  border-radius 2px
+  transition border-color 200ms
+
+  &:focus
+    outline none
+    border-color blue
+
+
+form // container
+  center(800px)
+  padding 0 1rem
+
+form .group
+  cf()
+  _margin-top()
+  > button
+    margin-top 0
+
+  button
+    display block
+    width 100%
+
+  button + button
+    margin-top 1rem
+
+  @media (min-width: 30em)
+    button
+      display inline-block
+      width auto
+
+    button + button
+      margin-top 0
+      margin-left 1rem
+
+form.inline .group
+  overflow hidden
+
+  label:nth-child(1)
+    line-height 2rem
+
+
+    @media (min-width: 30em)
+      text-align right
+      display inline-block
+      col(1/5)
+
+  input,select
+    @media (min-width: 30em)
+      col(4/5)
+
+  button
+    @media (min-width: 30em)
+      shift(1/5)
+
+  &.multi label:nth-child(n + 2)
+    color red
+    overflow hidden
+    stack()
+    margin 0.5rem 0
+    border-radius 2px
+    border 1px solid transparent
+    transition border-color 200ms
+
+    &:hover
+      border-color blue
+
+    @media (min-width: 30em)
+      unstack()
+      col(1/5)
+      margin 0
+
+    $input-width = 1.5rem
+    input
+      width $input-width
+      float left
+      margin-right 0
+
+    span
+      width calc(100% - $input-width)
+      display block
+      float left
+      line-height 2rem

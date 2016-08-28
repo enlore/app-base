@@ -1,0 +1,24 @@
+*
+  box-sizing border-box
+
+html, body
+  font-size 100%
+
+_margin-top()
+  margin-top 1rem
+
+//importing full path as a workaround
+//https://github.com/mojotech/jeet/issues/493
+@import 'jeet/_jeet.styl'
+//edit()
+
+@import '_forms'
+@import '_buttons'
+
+
+body
+    font-family sans-serif
+
+section
+    cf()
+    center(1000px)

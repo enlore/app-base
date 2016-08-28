@@ -1,0 +1,68 @@
+$c1: #333
+$c2: #000
+$c3: #ddd
+
+@mixin border-radius($radius)
+  border-radius: $radius
+
+@mixin img-resp
+  display: block
+  max-width: 100%
+
+@import _typo
+@import ../node_modules/susy/sass/susy
+
+$susy: (columns: 12, gutter-position: inside, global-box-sizing: border-box, container: 68em)
+
+//debug: (
+  //image: show,
+  //color: blue,
+  //output: overlay,
+  //toggle: top right,
+//),
+
+*
+  box-sizing: border-box
+
+@include susy-breakpoint (30em)
+  .tube:first-child
+    @include push(6)
+
+  .tube:last-child
+    @include pull(8)
+
+.tube
+  background-color: $c1
+  min-height: 2rem
+  p
+    color: $c2
+
+  //padding: 1rem
+  @include susy-breakpoint (30em)
+    @include span(4 nest)
+
+  .tubelet
+    background-color: $c3
+    @include susy-breakpoint (30em)
+      @include span(50%)
+
+section
+  margin-top: 2rem
+  @include container
+
+.portrait
+  @include susy-breakpoint (24em)
+    @include gallery(6)
+
+  @include susy-breakpoint (30em)
+    @include gallery(4)
+
+  @include susy-breakpoint(50em)
+    @include gallery(3)
+
+  padding-top: 0.5rem
+  padding-bottom: 0.5rem
+
+  img
+    @include img-resp
+    margin: 0 auto

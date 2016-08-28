@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0")
+
+    title Title Here
+    //-link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css")
+    link(rel="stylesheet", href="/css/normalize.css")
+
+    link(rel="stylesheet", href="/css/app.css")
+
+  body
+    section
+      h1 Apple Crapple
+      p An app about nothing
+
+    section
+      form.inline
+        .group
+          label Bark bark
+          input(type="text")
+
+        .group
+          label Feef fwoof
+          select
+            option(value="one") Bark
+            option(value="one") Bark
+            option(value="one") Bark
+            option(value="one") Bark
+
+        .group
+          label Birmp
+          input(type="checkbox")
+
+        .group.multi
+          label Pick One
+
+          label
+            input(type="radio", name="beef")
+            span Bark
+          label
+            input(type="radio", name="beef")
+            span Bark Bark
+          label
+            input(type="radio", name="beef")
+            span Banana
+          label
+            input(type="radio", name="beef")
+            span Potato
+
+        .group.multi
+          label Pick One
+
+          label
+            input(type="checkbox")
+            span Bark
+          label
+            input(type="checkbox")
+            span Bark Bark
+          label
+            input(type="checkbox")
+            span Banana
+          label
+            input(type="checkbox")
+            span Potato
+
+        .group
+          button(type="button") Submit
+          button(type="button") Bark
+
+    script(src="/vue.js")
