@@ -9,6 +9,7 @@ Starting a frontend project needs to be a snap. Need a few things:
 - [ ] Static assets
 - [ ] Grid System (float, flex)
 - [ ] Progressive build system (starting with 'none')
+- [ ] spah framework for spahs
 
 ### Static boilerplates
 
@@ -26,3 +27,7 @@ Starting a frontend project needs to be a snap. Need a few things:
 * ~~Pure~~
 * ~~Kouto Swiss~~
 * ~~Nib~~ (out of date on simple things like Normalize)
+
+### Spuh Framework/Lib
+
+:sparkles: Vue.js. Gotta say I'm a fan.
