@@ -21,7 +21,7 @@ Starting a frontend project needs to be a snap. Need a few things:
 * Jeet (love stylus)
 * Susy (but Susy seems way more flexible and better documented)
 * :sparkles: Skeleton (great for clean, simple float grid)
-* :sparkels: Miligram (great for flex)
+* :sparkles: Milligram (great for flex)
 * PostCSS (grid and utility mixins available?)
 * ~~Pure~~
 * ~~Kouto Swiss~~
