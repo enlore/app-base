@@ -19,8 +19,13 @@ Starting a frontend project needs to be a snap. Need a few things:
 
 ### Candidates for CSS tooling
 
-* Jeet (love stylus)
-* Susy (but Susy seems way more flexible and better documented)
+* Jeet
+** :sparkles: Stylus, `edit()` mode
+* Susy 
+** Susy has a debug mode consummate with Jeet's `edit()`
+** Super flexible (only one so far that lets me do padding gutters)
+** Well documented
+** Syntax a superset of CSS
 * :sparkles: Skeleton (great for clean, simple float grid)
 * :sparkles: Milligram (great for flex)
 * PostCSS (grid and utility mixins available?)
